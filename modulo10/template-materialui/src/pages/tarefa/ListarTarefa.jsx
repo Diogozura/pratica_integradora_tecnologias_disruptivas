@@ -106,9 +106,10 @@ const ListarTarefa = () => {
                 </TableHead>
                 <TableBody>
                 {tarefas.map((row, indice) => (
-                    <TableRow
+                  <TableRow
+                    
                     key={indice}
-                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                    sx={{ '&:last-child td, &:last-child th': { border: 0 }, bgcolor:{} }}
                     >
                       <TableCell component="th" scope="row">
                           {row.idTarefa}
@@ -133,7 +134,7 @@ const ListarTarefa = () => {
             </Table>
             </TableContainer>
         </CardContent>
-        <CardActions>
+        <CardActions >
             <Button size="small" variant="contained" onClick={handleOpen}>Criar Tarefa</Button>
             <Button size="small" variant="outlined">Cancelar</Button>
       </CardActions> 
